@@ -1,0 +1,195 @@
+.nav-container {
+  height: 94px;
+  width: 1440px;
+  position: relative;
+  background-color: var(--color-oldlace);
+  display: none;
+  max-width: 100%;
+}
+.logo{
+  height: 49px;
+  width: 259px;
+  position: relative;
+  object-fit: cover;
+}
+.about-us1,
+.find-doctors1,
+.home1 {
+  position: relative;
+  line-height: 140%;
+  text-transform: capitalize;
+  display: inline-block;
+}
+.home1 {
+  font-weight: 500;
+  min-width: 53px;
+}
+.about-us1,
+.find-doctors1 {
+  white-space: nowrap;
+}
+.find-doctors1 {
+  font-family: var(--font-dinpro-bold);
+  color: var(--color-darkolivegreen-100);
+  min-width: 116px;
+}
+.about-us1 {
+  font-weight: 500;
+  min-width: 81px;
+}
+.home-group,
+.logo-group {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.home-group {
+  margin: 0;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-dinpro);
+}
+.logo-group {
+  width: 669px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-61xl);
+}
+.login1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-dinpro);
+  color: var(--color-darkolivegreen-100);
+  text-align: left;
+  display: inline-block;
+  min-width: 60px;
+  white-space: nowrap;
+}
+.login-container {
+  cursor: pointer;
+  border: 1px solid var(--color-darkolivegreen-100);
+  padding: var(--padding-2xs-5) var(--padding-10xl) var(--padding-base-5);
+  background-color: var(--color-oldlace);
+  height: 58px;
+  border-radius: var(--br-2xs);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.login-container:hover {
+  background-color: var(--color-antiquewhite);
+  border: 1px solid var(--color-seagreen);
+  box-sizing: border-box;
+}
+.sign-up1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-dinpro);
+  color: var(--color-white);
+  text-align: left;
+  display: inline-block;
+  min-width: 85px;
+  white-space: nowrap;
+}
+.sign-up-container {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs-5) var(--padding-20xl) var(--padding-mini-5);
+  background-color: var(--color-darkolivegreen-100);
+  border-radius: var(--br-2xs);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-container:hover {
+  background-color: var(--color-seagreen);
+}
+.login-signup-button-container {
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.frame-header,
+.nav-elements {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.nav-elements {
+  width: 1232px;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.frame-header {
+  align-self: stretch;
+  background-color: var(--color-oldlace);
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-4xl) var(--padding-xl) var(--padding-mini);
+  box-sizing: border-box;
+  top: 0;
+  z-index: 99;
+  position: sticky;
+}
+@media screen and (max-width: 1050px) {
+  .home-group {
+    display: none;
+  }
+  .logo-group {
+    width: 339px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .logo-group {
+    gap: var(--gap-21xl);
+  }
+ 
+}
+@media screen and (max-width: 450px) {
+  .logo-group {
+    gap: var(--gap-xl);
+  }
+  .login-signup-button-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-elements {
+    width: 935px;
+  }
+  .logo{
+    height: 39px;
+    width: 179px;
+    position: absolute;
+    object-fit: cover;
+  }
+  .sign-up-container {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-2xs-5) var(--padding-20xl) var(--padding-mini-5);
+    background-color: var(--color-darkolivegreen-100);
+    border-radius: var(--br-2xs);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:126px;
+  }
+}
